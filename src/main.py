@@ -64,7 +64,7 @@ def main():
     
     totalExercise = keywords.reduce( Exercise.reduceKeywords )
     
-    with open('res/topTwenty.csv', 'wb') as f:
+    with open('out/topTwenty.csv', 'wb') as f:
         topTwenty = Exercise.outputStats(totalExercise)
         w = csv.writer(f)
         for i in topTwenty:
